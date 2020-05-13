@@ -9,6 +9,7 @@ body {
     text-align: center;
     background-color: hsla(0, 36%, 70%, 10%);
     color: hsla(0, 36%, 70%, 75%);
+    box-sizing: border-box;
 }
 
 /* Header */
@@ -42,11 +43,68 @@ body {
 
 }
 
+/* Form */
 
+.form-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18rem;
+    height: 3rem;
+    margin: 2rem auto 1rem;
+    border: 1px solid hsla(0, 6%, 24%, 22%);
+    border-right: hidden;
+    border-radius: 50px;
+}
 
+.form-main:hover{
+    border: solid 2px hsl(0, 93%, 68%)
+}
 
+.form-email {
+    width: 77%;
+    float: left;
+    background-color: transparent;
+    border-style: none;
+    font-family: inherit;
+    padding: 0.5rem 0;
+    margin-left: 2rem;
+    font-size: 1rem;
+    outline: none;
+}
 
+::placeholder {
+    color: hsla(0, 36%, 70%, 35%);
+    font-size: 0.8rem;
+    font-weight: 600;
+    font-family: inherit;
+}
 
+.form-error-icon {
+    visibility: hidden;
+}
+
+.form-button-main {
+    margin-left: 0.5rem;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    height: 3rem;
+    width: 5rem;
+    border-radius: 50px;
+    box-shadow: 0 .5rem 1rem hsla(0, 93%, 68%, 30%);
+    outline: none;
+}
+
+.form-button-main:hover{
+    background: linear-gradient(135deg, hsl(0, 80%, 92%), hsl(0, 80%, 86%));
+}
+
+.error-message {
+    font-size: 0.8rem;
+    color: hsl(0, 50%, 70%);
+    text-align: center;
+    padding-right: 3.5rem;
+    visibility: hidden;
+}
 
 
 
