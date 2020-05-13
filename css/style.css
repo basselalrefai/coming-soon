@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+.footer-text {
+    font-size: 11px; text-align: center;
+}
+
+.footer-link {
+    color: hsl(228, 45%, 44%);
+}
