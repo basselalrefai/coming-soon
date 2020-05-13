@@ -32,6 +32,10 @@ body {
     padding-top: 1rem;
 }
 
+.hero-img-mobile{
+    width: 100%;
+}
+
 .coming-soon {
     font-weight: 600;
     color: black;
@@ -41,6 +45,10 @@ body {
     text-align: center;
     padding: 0 1rem 2rem;
 
+}
+
+.hero-img-desktop {
+    display: none;
 }
 
 /* Form */
@@ -115,4 +123,59 @@ body {
 
 .footer-link {
     color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 768px) {
+    body {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: repeat(3, 1fr);
+        height: 100vh;
+    }
+
+    .hero-img-mobile {
+        display: none;
+    }
+
+    .hero-img-desktop {
+        display: block;
+    }
+
+    .hero-container {
+        max-width: 100%;
+        grid-row: 1 / 6;
+        grid-column: 2;
+        overflow: hidden;
+    }
+
+    .main {
+        line-height: 3rem;
+    }
+
+    .main-text {
+        width: 100%;
+        text-align: left;
+        padding: unset;
+        line-height: 1.5rem;
+    }
+
+    .main, .form-main{
+        width: 60%;
+        grid-column: 1;
+        width: 60%;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .header-main {
+        margin: 0 auto; 
+        text-align: left;
+        min-width: 60%;
+    }
+
+    .header-logo {
+        padding: unset;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
 }
