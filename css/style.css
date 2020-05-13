@@ -7,6 +7,20 @@ body {
     padding: 0;
     height: 100vh;
     text-align: center;
+    background-color: hsla(0, 36%, 70%, 10%);
+    color: hsla(0, 36%, 70%, 75%);
+}
+
+/* Header */
+.header-main {
+    height: 5rem;
+    text-align: left;
+    min-width: 375px;
+}
+
+.header-logo {
+    padding: 1.5rem 2rem;
+    height: 30%;
 }
 
 
