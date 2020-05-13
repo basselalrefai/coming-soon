@@ -9,7 +9,6 @@ console.log(errorIcon)
 // show error message
 button.addEventListener("click", function() {
     if (input.validity.typeMismatch) {
-        
         errorMessage.style.visibility = "visible";
         errorIcon.style.visibility = "visible";
         input.setCustomValidity(' ');
